@@ -1,0 +1,145 @@
+.contact-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  color: black;
+}
+
+.contact-info div {
+  color: #0a0625;
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  color: #0a0625;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.opening-hours {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 250px;
+}
+
+.opening-hours h3 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ed603e;
+}
+
+.opening-hours p {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-top: 150px;
+  color: black;
+}
+
+.welcome-message h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ed603e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #0a0625;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-message button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ed603e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+/* Responsive layout for mobile/tablet*/
+@media (max-width: 768px) {
+  .contact-info {
+    position: static;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .language-switcher {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .opening-hours {
+    position: static;
+    margin: 20px auto;
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .welcome-message {
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+
+  .welcome-message h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-message p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .welcome-message button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

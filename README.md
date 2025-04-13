@@ -18,6 +18,7 @@ This project is a simplified **Digital Menu App** built with **ReactJS**. It's m
 ## 🧾 Dummy Data Structure
 
 The menu is organized by categories (Pizza, Burgers, Drinks) with nested products, each having:
+
 - `id` (GUID)
 - `name`
 - `description`
@@ -39,6 +40,7 @@ You can find this in `src/data/menuData.js`
 
 2. **Product Card**
    Each product should show:
+
    - Name
    - Description
    - Price
@@ -52,6 +54,7 @@ You can find this in `src/data/menuData.js`
 
 5. **"Add to Order" Button**
    Let users add available products to a simulated “order cart”. Show a summary with:
+
    - Product name
    - Quantity
    - Subtotal
@@ -100,6 +103,7 @@ npm run dev
 ## 📩 Submission
 
 Please provide:
+
 - A link to a public GitHub repo
 - Any notes about what was completed, skipped, or added extra
 
@@ -112,3 +116,27 @@ Please provide:
 - Keep it modular, readable, and maintainable.
 
 Good luck! 🚀
+
+My contribution to this project:
+
+1. Menu Display by Category
+   The interface dynamically renders all available categories, displaying the corresponding products under each one.
+2. Product Card
+   Each product card includes: product name, description, price, availability indicator
+3. Filter by Category
+   Users can filter the displayed products by category using category-specific buttons.
+4. Toggle Product Availability
+   A toggle allows users to simulate changes in product availability. This only affects the frontend state and is useful for testing different UI states.
+5. "Add to Cart" Functionality
+   Users can add available products to a simulated cart. The order summary includes: product name ,quantity, subtotal per product, total order price
+6. Welcoming Home Page
+   I created a home page with: a welcome message, optional language switcher, call-to-action to navigate to the menu and start ordering, display of opening hours, contact options to help users get more information
+
+Bonus Features Implemented
+Search Bar: Allows users to filter products by name.
+Sorting Dropdown: Enables sorting products by price (ascending or descending).
+Responsive Layout: The interface is optimized for both mobile and tablet devices.
+Product Modal: Clicking a product opens a modal window with full product details.
+
+Extra Feature: Discount System
+For every three identical products added to the order, the user only pays for two. This discount is automatically calculated and shown in the “View My Orders” section after placing an order.
